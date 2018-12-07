@@ -1,0 +1,20 @@
+[file]
+    [file.app]
+    fileName = "./logs/app.log"
+    maxLines = 0
+    maxSize = 0
+    daily = true
+    maxDays = 30
+    rotate = true
+    level = 6
+    perm = "0744"
+
+    [file.for_debug]
+    fileName = "./logs/for_debug.log"
+    maxLines = 0
+    maxSize = 0
+    daily = true
+    maxDays = 30
+    rotate = true
+    level = 6
+    perm = "0744"

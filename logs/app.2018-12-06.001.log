@@ -1,0 +1,27 @@
+2018/12/06 20:05:39.535 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 20:18:26.478 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 20:24:39.356 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 20:26:21.616 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 20:43:32.660 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 20:44:28.529 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 20:46:09.269 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 20:55:42.566 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 21:00:54.965 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:17:10.573 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:18:02.976 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:18:32.084 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:19:56.632 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:24:38.634 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:24:38.635 [C] [asm_amd64.s:1333]  ListenAndServe:  listen tcp :8080: bind: address already in use
+2018/12/06 23:26:25.002 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:26:25.004 [C] [asm_amd64.s:1333]  ListenAndServe:  listen tcp :8080: bind: address already in use
+2018/12/06 23:28:59.935 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:28:59.935 [C] [asm_amd64.s:1333]  ListenAndServe:  listen tcp :8080: bind: address already in use
+2018/12/06 23:29:14.128 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:29:50.800 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:31:03.806 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:31:13.627 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:31:26.502 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:31:50.380 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/06 23:34:25.684 [I] [main.go:22]  app started, pid 83070 
+2018/12/06 23:34:25.709 [I] [asm_amd64.s:1333]  http server Running on http://:8080

@@ -1,0 +1,314 @@
+2018/12/07 11:43:21.853 [I] [main.go:33]  exit graceful 
+2018/12/07 11:43:27.762 [I] [main.go:22]  app started, pid 24446 
+2018/12/07 11:43:27.773 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 11:44:32.253 [I] [main.go:33]  exit graceful 
+2018/12/07 11:44:35.416 [I] [main.go:22]  app started, pid 24835 
+2018/12/07 11:44:35.433 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:01:42.656 [I] [main.go:33]  exit graceful 
+2018/12/07 14:01:46.409 [I] [main.go:35]  app started, pid 43170 
+2018/12/07 14:01:46.420 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:82
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/signal_unix.go:390
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/input.go:350
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:01:49.964 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:01:49.964 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:02:32.347 [I] [main.go:46]  exit graceful 
+2018/12/07 14:02:47.612 [I] [main.go:32]  app started, pid 43553 
+2018/12/07 14:02:47.645 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:03:09.924 [I] [main.go:43]  exit graceful 
+2018/12/07 14:03:12.598 [I] [main.go:32]  app started, pid 43702 
+2018/12/07 14:03:12.624 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:04:05.669 [I] [main.go:43]  exit graceful 
+2018/12/07 14:04:10.591 [I] [main.go:33]  app started, pid 44012 
+2018/12/07 14:04:10.615 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:04:15.510 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:04:15.510 [C] [asm_amd64.s:522]  Handler crashed with error 
+2018/12/07 14:04:15.510 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:04:15.510 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:04:15.510 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:04:15.511 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:04:15.511 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:04:15.511 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:04:15.511 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:04:15.511 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:04:15.511 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:04:15.511 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:04:57.206 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  Handler crashed with error 
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:04:57.207 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:04:57.207 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  Handler crashed with error 
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:04:59.503 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:04:59.504 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:07:06.557 [I] [main.go:44]  exit graceful 
+2018/12/07 14:07:09.935 [I] [main.go:32]  app started, pid 44996 
+2018/12/07 14:07:09.962 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:07:41.437 [I] [main.go:43]  exit graceful 
+2018/12/07 14:07:44.742 [I] [main.go:32]  app started, pid 45207 
+2018/12/07 14:07:44.767 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:13:51.789 [I] [main.go:43]  exit graceful 
+2018/12/07 14:15:34.250 [I] [main.go:32]  app started, pid 49016 
+2018/12/07 14:15:34.260 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:17:19.377 [I] [main.go:43]  exit graceful 
+2018/12/07 14:17:26.906 [I] [main.go:32]  app started, pid 49697 
+2018/12/07 14:17:26.917 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:18:36.052 [I] [main.go:32]  app started, pid 50098 
+2018/12/07 14:18:36.071 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:19:31.290 [I] [main.go:32]  app started, pid 50419 
+2018/12/07 14:19:31.299 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:19:35.192 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  Handler crashed with error 
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:19:35.193 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:19:35.194 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:20:20.123 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:20:20.123 [C] [asm_amd64.s:522]  Handler crashed with error 
+2018/12/07 14:20:20.123 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:20:20.123 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:20:20.123 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:20:20.123 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:20:20.123 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:20:20.124 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:20:20.124 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:20:20.124 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:20:20.124 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:20:20.124 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:20:35.665 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:20:35.665 [C] [asm_amd64.s:522]  Handler crashed with error 
+2018/12/07 14:20:35.665 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:20:35.665 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:20:35.666 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:20:35.666 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:20:35.666 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:20:35.666 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:20:35.666 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:20:35.666 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:20:35.666 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:20:35.666 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:22:12.517 [I] [main.go:32]  app started, pid 51312 
+2018/12/07 14:22:12.527 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:28:47.836 [I] [main.go:32]  app started, pid 53404 
+2018/12/07 14:28:47.849 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  Handler crashed with error 
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:28:50.914 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:28:50.915 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:29:22.274 [I] [main.go:32]  app started, pid 53622 
+2018/12/07 14:29:22.284 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:29:25.504 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:29:25.505 [C] [asm_amd64.s:522]  Handler crashed with error 111
+2018/12/07 14:29:25.505 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:29:25.505 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:29:25.506 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/context/context.go:88
+2018/12/07 14:29:25.506 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:22
+2018/12/07 14:29:25.506 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:29:25.506 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:29:25.506 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:29:25.506 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:29:25.506 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:29:25.507 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:30:15.977 [I] [main.go:31]  app started, pid 53929 
+2018/12/07 14:30:15.987 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:32:15.892 [I] [main.go:34]  app started, pid 54593 
+2018/12/07 14:32:15.904 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  Handler crashed with error forbidden
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:24
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:32:18.737 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:32:18.738 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:32:18.738 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:34:41.995 [I] [main.go:33]  app started, pid 55361 
+2018/12/07 14:34:42.006 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:35:07.160 [I] [main.go:33]  app started, pid 55540 
+2018/12/07 14:35:07.169 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:36:13.927 [I] [main.go:33]  app started, pid 55902 
+2018/12/07 14:36:13.938 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:39:26.096 [I] [main.go:33]  app started, pid 56938 
+2018/12/07 14:39:26.108 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:41:29.541 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  Handler crashed with error 123
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/main.go:23
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:645
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:731
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 14:41:29.542 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 14:41:29.543 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 14:43:18.227 [I] [main.go:32]  app started, pid 58174 
+2018/12/07 14:43:18.237 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 14:49:29.518 [I] [main.go:32]  app started, pid 60211 
+2018/12/07 14:49:29.535 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 15:01:06.294 [I] [main.go:33]  app started, pid 63809 
+2018/12/07 15:01:06.304 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 15:01:10.045 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 15:06:37.278 [I] [main.go:33]  app started, pid 65535 
+2018/12/07 15:06:37.289 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 15:07:12.198 [I] [main.go:33]  app started, pid 65727 
+2018/12/07 15:07:12.207 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 15:11:40.451 [I] [main.go:33]  app started, pid 67177 
+2018/12/07 15:11:40.461 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 15:12:08.169 [I] [main.go:31]  app started, pid 67334 
+2018/12/07 15:12:08.179 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 17:29:17.211 [I] [main.go:31]  app started, pid 12242 
+2018/12/07 17:29:17.222 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 17:30:33.906 [I] [main.go:31]  app started, pid 12660 
+2018/12/07 17:30:33.918 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 17:31:28.900 [I] [main.go:31]  app started, pid 12970 
+2018/12/07 17:31:28.909 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 17:31:53.877 [I] [main.go:31]  app started, pid 13124 
+2018/12/07 17:31:53.889 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 17:32:06.853 [I] [main.go:31]  app started, pid 13234 
+2018/12/07 17:32:06.862 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 17:32:23.773 [I] [main.go:31]  app started, pid 13339 
+2018/12/07 17:32:23.784 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 17:59:40.918 [I] [main.go:31]  app started, pid 21716 
+2018/12/07 17:59:40.928 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:01:17.191 [I] [main.go:31]  app started, pid 22230 
+2018/12/07 18:01:17.202 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:01:46.548 [I] [main.go:31]  app started, pid 22397 
+2018/12/07 18:01:46.565 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:03:31.400 [I] [main.go:31]  app started, pid 22975 
+2018/12/07 18:03:31.425 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:04:15.808 [I] [main.go:31]  app started, pid 23225 
+2018/12/07 18:04:15.817 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:04:41.825 [I] [main.go:31]  app started, pid 23377 
+2018/12/07 18:04:41.840 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:14:36.772 [I] [main.go:31]  app started, pid 26523 
+2018/12/07 18:14:36.783 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:15:30.787 [I] [main.go:31]  app started, pid 26821 
+2018/12/07 18:15:30.797 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:16:22.580 [I] [main.go:31]  app started, pid 27108 
+2018/12/07 18:16:22.595 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:17:57.317 [I] [main.go:31]  app started, pid 27635 
+2018/12/07 18:17:57.328 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:18:31.991 [I] [main.go:31]  app started, pid 27827 
+2018/12/07 18:18:32.000 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:19:09.919 [I] [main.go:31]  app started, pid 28047 
+2018/12/07 18:19:09.932 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:21:11.701 [I] [main.go:31]  app started, pid 28709 
+2018/12/07 18:21:11.715 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:24:48.406 [I] [main.go:31]  app started, pid 29853 
+2018/12/07 18:24:48.416 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:25:14.573 [I] [main.go:31]  app started, pid 30007 
+2018/12/07 18:25:14.587 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:31:55.687 [I] [main.go:30]  app started, pid 32124 
+2018/12/07 18:31:55.697 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:32:10.538 [I] [main.go:30]  app started, pid 32222 
+2018/12/07 18:32:10.552 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:32:19.015 [I] [main.go:30]  app started, pid 32277 
+2018/12/07 18:32:19.026 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:33:55.155 [I] [main.go:30]  app started, pid 32781 
+2018/12/07 18:33:55.166 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:34:42.155 [I] [main.go:30]  app started, pid 33035 
+2018/12/07 18:34:42.168 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:35:03.552 [I] [main.go:30]  app started, pid 33196 
+2018/12/07 18:35:03.564 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:35:18.579 [I] [main.go:30]  app started, pid 33285 
+2018/12/07 18:35:18.588 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:36:18.936 [I] [main.go:30]  app started, pid 33596 
+2018/12/07 18:36:18.947 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:36:44.979 [I] [main.go:30]  app started, pid 33745 
+2018/12/07 18:36:44.990 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 18:36:57.219 [I] [main.go:30]  app started, pid 33827 
+2018/12/07 18:36:57.233 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:35:26.035 [I] [main.go:24]  app started, pid 47868 
+2018/12/07 19:35:26.045 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:36:51.788 [I] [main.go:24]  app started, pid 48345 
+2018/12/07 19:36:51.801 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:39:11.782 [I] [main.go:24]  app started, pid 49096 
+2018/12/07 19:39:11.792 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:40:50.011 [I] [main.go:25]  app started, pid 49618 
+2018/12/07 19:40:50.021 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:41:57.569 [I] [main.go:28]  app started, pid 50004 
+2018/12/07 19:41:57.582 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:42:32.668 [I] [main.go:28]  app started, pid 50107 
+2018/12/07 19:42:32.678 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:43:23.734 [I] [main.go:22]  app started, pid 50469 
+2018/12/07 19:43:23.747 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:44:27.002 [I] [main.go:22]  app started, pid 50842 
+2018/12/07 19:44:27.012 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:53:39.786 [I] [main.go:22]  app started, pid 53725 
+2018/12/07 19:53:39.799 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/07 19:53:42.545 [C] [asm_amd64.s:522]  the request url is  /user/login
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  Handler crashed with error reflect: Call with too few input arguments
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:364
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:308
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:852
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 19:53:42.546 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 19:53:42.547 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  the request url is  /user/login
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  Handler crashed with error reflect: Call with too few input arguments
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:364
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:308
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:852
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 19:54:28.684 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 19:54:28.685 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  the request url is  /user/login
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  Handler crashed with error reflect: Call with too few input arguments
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:364
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:308
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:852
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/07 19:54:51.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/07 19:54:51.482 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/07 19:54:57.020 [I] [main.go:22]  app started, pid 54163 
+2018/12/07 19:54:57.030 [I] [asm_amd64.s:1333]  http server Running on http://:8080
