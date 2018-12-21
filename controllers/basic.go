@@ -12,13 +12,13 @@ type BasicController struct {
 
 // 统一返回值
 type ResponseData struct {
-	Ret int `json:"ret"`
-	Message string `json:"message"`
-	Result interface{} `json:"result"`
-	ServerTime int64 `json:"serverTime"`
+	Ret        int         `json:"ret"`
+	Message    string      `json:"message"`
+	Result     interface{} `json:"result"`
+	ServerTime int64       `json:"serverTime"`
 }
 
-func (t *BasicController) renderJson(d interface{})  {
+func (t *BasicController) renderJson(d interface{}) {
 	t.SetData(d)
 	callbackStr := t.GetString("callback", "")
 	if callbackStr != "" {
@@ -28,17 +28,17 @@ func (t *BasicController) renderJson(d interface{})  {
 	}
 }
 
-func (t *BasicController) ok(d interface{})  {
+func (t *BasicController) ok(d interface{}) {
 	rd := &ResponseData{
-		Ret: 200,
-		Message: "ok",
-		Result: d,
+		Ret:        200,
+		Message:    "ok",
+		Result:     d,
 		ServerTime: time.Now().UnixNano() / 1000000,
 	}
 	t.renderJson(rd)
 }
 
-func (t *BasicController) forbidden(d ...interface{})  {
+func (t *BasicController) forbidden(d ...interface{}) {
 	t.SetData(d)
 	t.Ctx.ResponseWriter.Status = 403
 	t.ServeJSON()

@@ -312,3 +312,251 @@
 2018/12/07 19:54:51.482 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
 2018/12/07 19:54:57.020 [I] [main.go:22]  app started, pid 54163 
 2018/12/07 19:54:57.030 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/20 11:24:06.067 [I] [main.go:22]  app started, pid 72859 
+2018/12/20 11:24:06.082 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/20 11:26:45.927 [I] [main.go:22]  app started, pid 73732 
+2018/12/20 11:26:45.938 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/20 11:41:06.047 [I] [main.go:22]  app started, pid 78190 
+2018/12/20 11:41:06.068 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/20 11:46:37.525 [I] [main.go:22]  app started, pid 79980 
+2018/12/20 11:46:37.542 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  Handler crashed with error reflect.Value.Interface: cannot return value obtained from unexported field or method
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:989
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:978
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:29
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/20 11:47:08.210 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/20 11:47:08.211 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/20 11:50:20.836 [I] [main.go:22]  app started, pid 81180 
+2018/12/20 11:50:20.854 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 11:20:32.995 [I] [main.go:22]  app started, pid 61683 
+2018/12/21 11:20:33.016 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:27:28.847 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 13:27:28.849 [C] [asm_amd64.s:522]  Handler crashed with error reflect: call of reflect.Value.FieldByName on ptr Value
+2018/12/21 13:27:28.851 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 13:27:28.851 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 13:27:28.851 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:207
+2018/12/21 13:27:28.851 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:865
+2018/12/21 13:27:28.852 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:28
+2018/12/21 13:27:28.852 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/21 13:27:28.852 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 13:27:28.852 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 13:27:28.852 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 13:27:28.852 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 13:27:28.853 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 13:28:19.042 [I] [main.go:22]  app started, pid 89462 
+2018/12/21 13:28:19.055 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  Handler crashed with error reflect: call of reflect.Value.FieldByName on ptr Value
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:207
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:865
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:28
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 13:28:28.345 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 13:28:28.346 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 13:28:56.550 [I] [main.go:22]  app started, pid 89684 
+2018/12/21 13:28:56.562 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:29:17.193 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  Handler crashed with error reflect.Value.Interface: cannot return value obtained from unexported field or method
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:989
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:978
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:29
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/21 13:29:17.194 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 13:29:17.195 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 13:29:17.195 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 13:29:17.195 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 13:29:17.195 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 13:30:45.060 [I] [main.go:22]  app started, pid 90306 
+2018/12/21 13:30:45.074 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:31:12.609 [I] [main.go:22]  app started, pid 90484 
+2018/12/21 13:31:12.621 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:31:21.506 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 13:31:21.506 [C] [asm_amd64.s:522]  Handler crashed with error reflect.Value.Interface: cannot return value obtained from unexported field or method
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:989
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:978
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:29
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 13:31:21.507 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 13:31:21.508 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 13:31:21.509 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 13:35:12.713 [I] [main.go:22]  app started, pid 91794 
+2018/12/21 13:35:12.724 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:35:20.594 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  Handler crashed with error reflect: call of reflect.Value.Elem on struct Value
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:805
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:27
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 13:35:20.595 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 13:35:20.596 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 13:35:44.875 [I] [main.go:22]  app started, pid 91992 
+2018/12/21 13:35:44.885 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:35:55.636 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 13:35:55.636 [C] [asm_amd64.s:522]  Handler crashed with error reflect.Value.Interface: cannot return value obtained from unexported field or method
+2018/12/21 13:35:55.636 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 13:35:55.636 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 13:35:55.636 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:989
+2018/12/21 13:35:55.637 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:978
+2018/12/21 13:35:55.637 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:29
+2018/12/21 13:35:55.637 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/21 13:35:55.637 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 13:35:55.637 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 13:35:55.637 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 13:35:55.637 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 13:35:55.638 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 13:57:28.830 [I] [main.go:22]  app started, pid 98655 
+2018/12/21 13:57:28.846 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:58:08.105 [I] [main.go:22]  app started, pid 98883 
+2018/12/21 13:58:08.122 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 13:58:19.905 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  Handler crashed with error reflect.Value.Interface: cannot return value obtained from unexported field or method
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:989
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:978
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:29
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:12
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 13:58:19.906 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 13:58:19.907 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 13:58:19.907 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 13:58:19.908 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 14:01:06.502 [I] [main.go:22]  app started, pid 99858 
+2018/12/21 14:01:06.517 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:03:06.138 [I] [main.go:22]  app started, pid 764 
+2018/12/21 14:03:06.156 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:03:17.713 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 14:03:17.713 [C] [asm_amd64.s:522]  Handler crashed with error interface conversion: *reflect.Type is not reflect.Type: missing method Align
+2018/12/21 14:03:17.713 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 14:03:17.713 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 14:03:17.713 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/iface.go:44
+2018/12/21 14:03:17.713 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/iface.go:550
+2018/12/21 14:03:17.713 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:31
+2018/12/21 14:03:17.714 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:13
+2018/12/21 14:03:17.714 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 14:03:17.714 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 14:03:17.715 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 14:03:17.715 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 14:03:17.716 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 14:04:11.971 [I] [main.go:22]  app started, pid 1158 
+2018/12/21 14:04:11.982 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:06:05.543 [I] [main.go:22]  app started, pid 1766 
+2018/12/21 14:06:05.570 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:06:45.873 [I] [main.go:22]  app started, pid 2026 
+2018/12/21 14:06:45.888 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:06:59.034 [I] [main.go:22]  app started, pid 2130 
+2018/12/21 14:06:59.043 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:07:48.318 [I] [main.go:22]  app started, pid 2412 
+2018/12/21 14:07:48.330 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:09:19.935 [I] [main.go:22]  app started, pid 2921 
+2018/12/21 14:09:19.945 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:11:42.323 [I] [main.go:22]  app started, pid 3683 
+2018/12/21 14:11:42.334 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:11:48.647 [I] [main.go:22]  app started, pid 3733 
+2018/12/21 14:11:48.666 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:21:43.858 [I] [main.go:22]  app started, pid 6867 
+2018/12/21 14:21:43.868 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  Handler crashed with error reflect: call of reflect.Value.Field on ptr Value
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:812
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:33
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:13
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 14:21:47.808 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 14:21:47.809 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 14:22:15.269 [I] [main.go:22]  app started, pid 7079 
+2018/12/21 14:22:15.278 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:23:31.911 [I] [main.go:22]  app started, pid 7490 
+2018/12/21 14:23:31.925 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  Handler crashed with error reflect: call of reflect.Value.Field on ptr Value
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:812
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:33
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:13
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 14:23:34.480 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 14:23:34.481 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 14:23:34.481 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  Handler crashed with error reflect: call of reflect.Value.Field on ptr Value
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:812
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:33
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:13
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 14:26:22.225 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 14:26:22.226 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  Handler crashed with error reflect: call of reflect.Value.Field on ptr Value
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:812
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:33
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:13
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 14:26:34.156 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 14:26:34.157 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 14:26:42.576 [I] [main.go:22]  app started, pid 8503 
+2018/12/21 14:26:42.596 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:31:14.510 [I] [main.go:22]  app started, pid 9951 
+2018/12/21 14:31:14.523 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:39:08.920 [I] [main.go:22]  app started, pid 12455 
+2018/12/21 14:39:08.936 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:50:57.458 [I] [main.go:22]  app started, pid 16128 
+2018/12/21 14:50:57.470 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:55:36.138 [C] [asm_amd64.s:522]  the request url is  /testtest
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  Handler crashed with error interface conversion: interface {} is *map[string]string, not map[string]string
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/iface.go:248
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:42
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/aop.go:13
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:817
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2018/12/21 14:55:36.140 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2018/12/21 14:55:36.142 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2018/12/21 14:56:06.824 [I] [main.go:22]  app started, pid 17785 
+2018/12/21 14:56:06.835 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:56:41.666 [I] [main.go:22]  app started, pid 17982 
+2018/12/21 14:56:41.676 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 14:59:50.531 [I] [main.go:22]  app started, pid 18977 
+2018/12/21 14:59:50.543 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 15:08:04.789 [I] [main.go:22]  app started, pid 21550 
+2018/12/21 15:08:04.807 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2018/12/21 15:16:05.871 [I] [main.go:22]  app started, pid 24063 
+2018/12/21 15:16:05.885 [I] [asm_amd64.s:1333]  http server Running on http://:8080

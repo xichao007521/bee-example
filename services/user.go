@@ -9,7 +9,7 @@ type UserService struct {
 func (*UserService) Login(username string, password string) *models.User {
 	// TODO do something
 	return &models.User{
-		Id: 1,
+		Id:   1,
 		Name: "u1",
 	}
 }

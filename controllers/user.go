@@ -29,7 +29,7 @@ func (the *UserController) GetUser() {
 	//the.renderJson(d)
 }
 
-func (the *UserController) Login(username string)  {
+func (the *UserController) Login() {
 	user := userService.Login("1", "2")
 	the.ok(user)
 }
