@@ -38,10 +38,14 @@ func (t *BasicController) ok(d interface{}) {
 	t.renderJson(rd)
 }
 
-func (t *BasicController) forbidden(d ...interface{}) {
-	t.SetData(d)
-	t.Ctx.ResponseWriter.Status = 403
-	t.ServeJSON()
+func (t *BasicController) Error403() {
+	t.Abort("403")
+}
+func (t *BasicController) Error400() {
+	t.Abort("400")
+}
+func (t *BasicController) Error500() {
+	t.Abort("500")
 }
 
 var userService services.UserService

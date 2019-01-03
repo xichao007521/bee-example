@@ -3,6 +3,7 @@ package logger
 import (
 	"encoding/json"
 	"github.com/BurntSushi/toml"
+	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"io/ioutil"
 	"log"
@@ -32,6 +33,10 @@ var AppConfig FileConfig
 func init() {
 	readConfig()
 	AppConfig = loggerConfig.FileLoggers["app"]
+	content, _ := json.Marshal(AppConfig)
+	beego.SetLogger("file", string(content))
+
+	beego.BConfig.Log.AccessLogs = true
 
 	buildCustomLogger()
 }

@@ -43,7 +43,7 @@ func checkAccess(t *BasicController) {
 	}
 	controllerType, methods, isFind := t.GetRequestControllerAndMethods()
 	if !isFind {
-		t.forbidden()
+		t.Error403()
 		return
 	}
 
@@ -62,7 +62,7 @@ func checkAccess(t *BasicController) {
 
 	token := t.Ctx.Request.Header.Get("x-token")
 	if token == "" {
-		t.forbidden()
+		t.Error403()
 	}
 
 	// TODO 判断用户
