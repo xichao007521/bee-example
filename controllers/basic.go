@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"context"
+	"do-global.com/bee-example/error"
 	"do-global.com/bee-example/services"
 	"github.com/astaxie/beego"
 	"strings"
@@ -75,5 +76,12 @@ func (t *BasicController) getRealIp() string {
 	return ip
 }
 
+func (t *BasicController) GetStringNE(key string) string {
+	v := t.GetString(key)
+	if v == "" {
+		panic(myError.NewBizError(400, "param:" + key + " must not be empty"))
+	}
+	return v
+}
 
 var userService services.UserService
