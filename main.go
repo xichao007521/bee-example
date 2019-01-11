@@ -1,13 +1,13 @@
 package main
 
 import (
+	_ "do-global.com/bee-example/error"
 	"do-global.com/bee-example/logger"
+	_ "do-global.com/bee-example/logger"
 	_ "do-global.com/bee-example/routers"
 	"encoding/json"
 	"github.com/astaxie/beego"
 	"os"
-	"os/signal"
-	"syscall"
 )
 
 func main() {
@@ -19,16 +19,16 @@ func main() {
 	}()
 
 	beego.Info("app started, pid", os.Getpid())
-
-	quit := make(chan os.Signal)
-	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
-	<-quit
-
-	shutdownGraceful()
+	prepare()
+	defer shutdownGraceful()
+	beego.Run()
 }
 
-func shutdownGraceful()  {
+func shutdownGraceful() {
 	// release resource, like db pool, redis pool
 	beego.Info("exit graceful")
 }
 
+// do something before http run
+func prepare() {
+}

@@ -1,7 +1,9 @@
 package controllers
 
 import (
+	"context"
 	"do-global.com/bee-example/services"
+	"do-global.com/public-server/models"
 	"github.com/astaxie/beego"
 	"strings"
 	"time"
@@ -12,6 +14,12 @@ type BasicController struct {
 
 	// 请求开始时间
 	startTime int64
+
+	// 产品线
+	productApp *models.ProductApp
+
+	// 上下文
+	reqCtx context.Context
 }
 
 // 统一返回值
@@ -42,10 +50,14 @@ func (t *BasicController) ok(d interface{}) {
 	t.renderJson(rd)
 }
 
-func (t *BasicController) forbidden(d ...interface{}) {
-	t.SetData(d)
-	t.Ctx.ResponseWriter.Status = 403
-	t.ServeJSON()
+func (t *BasicController) Error403() {
+	t.Abort("403")
+}
+func (t *BasicController) Error400() {
+	t.Abort("400")
+}
+func (t *BasicController) Error500() {
+	t.Abort("500")
 }
 
 func (t *BasicController) getRealIp() string {

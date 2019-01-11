@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"context"
-	"do-global.com/public-server/globals"
-	"do-global.com/public-server/logger"
+	"do-global.com/bee-example/globals"
+	"do-global.com/bee-example/logger"
 	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego"
@@ -77,7 +77,7 @@ func checkAccess(t *BasicController) {
 	}
 	controllerType, methods, isFind := t.GetRequestControllerAndMethods()
 	if !isFind {
-		t.forbidden()
+		t.Error403()
 		return
 	}
 
@@ -93,24 +93,13 @@ func checkAccess(t *BasicController) {
 			return
 		}
 	}
-	// TODO
-	//
-	//appSecret := t.Ctx.Request.Header.Get("x-secret")
-	//if appSecret == "" {
-	//	t.forbidden()
-	//	return
-	//}
-	//appId := t.GetString("app_id")
-	//if appId == "" {
-	//	t.forbidden()
-	//	return
-	//}
-	//
-	//productApp, err := productAppService.GetProductApp(t.reqCtx, appId, appSecret)
-	//if err != nil || productApp.Id == 0 {
-	//	t.forbidden()
-	//	return
-	//}
-	//t.productApp = productApp
+
+	token := t.Ctx.Request.Header.Get("x-token")
+	if token == "" {
+		t.Error403()
+	}
+
+	// TODO 判断用户
+
 }
 

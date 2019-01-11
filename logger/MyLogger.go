@@ -36,6 +36,10 @@ var AppConfig FileConfig
 func init() {
 	readConfig()
 	AppConfig = loggerConfig.FileLoggers["app"]
+	content, _ := json.Marshal(AppConfig)
+	beego.SetLogger("file", string(content))
+
+	beego.BConfig.Log.AccessLogs = true
 
 	ForDebugLogger = buildCustomLogger("for_debug")
 
