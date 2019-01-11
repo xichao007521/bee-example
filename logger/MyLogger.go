@@ -3,18 +3,22 @@ package logger
 import (
 	"encoding/json"
 	"github.com/BurntSushi/toml"
+	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
 	"io/ioutil"
 	"log"
+	"os"
 	"sync"
 )
 
 type FileConfig struct {
 	FileName string
-	MaxLines int    // 每个文件保存的最大行数，默认值 1000000
-	MaxSize  int    // 每个文件保存的最大尺寸, 默认值是 1 << 28
-	Daily    bool   // 是否按照每天 logrotate，默认是 true
-	MaxDays  int    // 文件最多保存多少天，默认保存 7 天
+	MaxLines int  // 每个文件保存的最大行数，默认值 1000000
+	MaxSize  int  // 每个文件保存的最大尺寸, 默认值是 1 << 28
+	Daily    bool // 是否按照每天 logrotate，默认是 true
+	MaxDays  int  // 文件最多保存多少天，默认保存 7 天
+	Hourly   bool
+	MaxHours int64
 	Rotate   bool   // 默认是 true
 	Level    int    // 默认是 Trace 级别
 	Perm     string // 日志文件权限
@@ -33,27 +37,42 @@ func init() {
 	readConfig()
 	AppConfig = loggerConfig.FileLoggers["app"]
 
-	buildCustomLogger()
+	ForDebugLogger = buildCustomLogger("for_debug")
+
+	AccessLogger = buildCustomLogger("access")
+	AccessLogger.EnableFuncCallDepth(false)
 }
 
 // 自定义日志
+// 方便debug日志
 var ForDebugLogger *logs.BeeLogger
+// 自定义access日志
+var AccessLogger *logs.BeeLogger
 
-func buildCustomLogger() {
-	ForDebugConfig := loggerConfig.FileLoggers["for_debug"]
-	configContent, _ := json.Marshal(ForDebugConfig)
-	ForDebugLogger = logs.NewLogger()
-	ForDebugLogger.SetLogger("file", string(configContent))
-	ForDebugLogger.SetLogger(logs.AdapterConsole)
-	ForDebugLogger.SetLogFuncCallDepth(1)
+
+func buildCustomLogger(loggerName string) *logs.BeeLogger {
+	loggerFileConfig := loggerConfig.FileLoggers[loggerName]
+	configContent, _ := json.Marshal(loggerFileConfig)
+	result := logs.NewLogger()
+	result.SetLogger("file", string(configContent))
+	result.SetLogger(logs.AdapterConsole)
+	return result
 }
+
 
 // read config
 func readConfig() {
 	lock.Lock()
 	defer lock.Unlock()
+	filename := "logger.toml"
+	runmode := beego.AppConfig.String("runmode")
+	_, err := os.Stat("./conf/" + runmode + "." + filename)
+	if err == nil {
+		filename = runmode + "." + filename
+	}
+
 	if len(loggerConfig.FileLoggers) == 0 {
-		data, err := ioutil.ReadFile("./conf/logger.toml")
+		data, err := ioutil.ReadFile("./conf/" + filename)
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -62,5 +81,16 @@ func readConfig() {
 			log.Fatal(err)
 		}
 		loggerConfig = loggerToml
+		for _, fileLogger := range loggerConfig.FileLoggers {
+			if fileLogger.MaxDays == 0 {
+				fileLogger.MaxDays = 7
+			}
+			if fileLogger.MaxLines == 0 {
+				fileLogger.MaxLines = 100000
+			}
+			if fileLogger.MaxSize == 0 {
+				fileLogger.MaxSize = 1 << 28
+			}
+		}
 	}
 }

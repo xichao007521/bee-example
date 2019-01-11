@@ -3,11 +3,15 @@ package controllers
 import (
 	"do-global.com/bee-example/services"
 	"github.com/astaxie/beego"
+	"strings"
 	"time"
 )
 
 type BasicController struct {
 	beego.Controller
+
+	// 请求开始时间
+	startTime int64
 }
 
 // 统一返回值
@@ -43,5 +47,25 @@ func (t *BasicController) forbidden(d ...interface{}) {
 	t.Ctx.ResponseWriter.Status = 403
 	t.ServeJSON()
 }
+
+func (t *BasicController) getRealIp() string {
+	var ip string
+	ip = t.Ctx.Request.Header.Get("X-Forwarded-For")
+	if ip == "" {
+		ip = t.Ctx.Request.Header.Get("Client-Ip")
+	}
+	if ip == "" {
+		ip = t.Ctx.Request.Header.Get("X-Real-Ip")
+	}
+	if ip == "" {
+		ip = t.Ctx.Request.RemoteAddr
+		lastColon := strings.LastIndex(ip, ":")
+		if lastColon > -1 {
+			ip = string(ip[0:lastColon - 1])
+		}
+	}
+	return ip
+}
+
 
 var userService services.UserService

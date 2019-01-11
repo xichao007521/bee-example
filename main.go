@@ -14,7 +14,6 @@ func main() {
 	appLoggerConf := logger.AppConfig
 	content, _ := json.Marshal(appLoggerConf)
 	beego.SetLogger("file", string(content))
-
 	go func() {
 		beego.Run()
 	}()

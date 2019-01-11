@@ -18,3 +18,14 @@
     rotate = true
     level = 6
     perm = "0744"
+
+    [file.access]
+    fileName = "./logs/access.log"
+    maxLines = 0
+    maxSize = 0
+    daily = false
+    hourly = true
+    maxDays = 168
+    rotate = true
+    level = 6
+    perm = "0744"
