@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 /.idea
 /bee-example.*
 /logs
 /vendor
-=======
-.idea
-logs
-vendor
-Gopkg*
->>>>>>> 97f9b96610fb7a58eef6ff03ec32dfa93ceaaf68
