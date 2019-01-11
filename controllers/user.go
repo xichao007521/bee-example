@@ -1,10 +1,17 @@
 package controllers
 
+import (
+	"do-global.com/bee-example/error"
+	"fmt"
+)
+
 type UserController struct {
 	BasicController
 }
 
 func (the *UserController) GetUser() {
+	panic(myError.NewBizError(601, "123"))
+	fmt.Println(33333)
 	the.ok("123")
 	//var tp http.RoundTripper = &http.Transport{
 	//	DialContext: (&net.Dialer{

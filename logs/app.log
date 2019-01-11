@@ -602,3 +602,170 @@
 2018/12/26 15:17:24.217 [I] [asm_amd64.s:1333]  http server Running on http://:8080
 2018/12/26 15:18:11.187 [I] [main.go:21]  app started, pid 81637 
 2018/12/26 15:18:11.198 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:12:26.983 [I] [main.go:21]  app started, pid 92735 
+2019/01/11 11:12:27.000 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:12:27.001 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:12:27.001 [C] [asm_amd64.s:1333]  ListenAndServe:  listen tcp :8080: bind: address already in use
+2019/01/11 11:12:27.002 [I] [main.go:29]  exit graceful 
+2019/01/11 11:13:00.272 [I] [main.go:21]  app started, pid 92951 
+2019/01/11 11:13:00.287 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:13:00.292 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:13:00.292 [C] [asm_amd64.s:1333]  ListenAndServe:  listen tcp :8080: bind: address already in use
+2019/01/11 11:13:00.293 [I] [main.go:29]  exit graceful 
+2019/01/11 11:13:50.238 [I] [main.go:18]  app started, pid 93218 
+2019/01/11 11:13:50.248 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:14:14.846 [error.go:427]  ::1 - - [01/Jan/0001 12:00:00] "GET /user/getUser HTTP/1.1 404 0" 0.000000  curl/7.54.0
+2019/01/11 11:14:14.846 [server.go:2741]  ::1 - - [11/Jan/2019 11:14:14] "GET /user/getUser HTTP/1.1 404 0" 0.000291  curl/7.54.0
+2019/01/11 11:14:22.925 [error.go:427]  ::1 - - [01/Jan/0001 12:00:00] "GET /user/GetUser HTTP/1.1 404 0" 0.000000  curl/7.54.0
+2019/01/11 11:14:22.925 [server.go:2741]  ::1 - - [11/Jan/2019 11:14:22] "GET /user/GetUser HTTP/1.1 404 0" 0.000161  curl/7.54.0
+2019/01/11 11:14:50.539 [I] [main.go:18]  app started, pid 93563 
+2019/01/11 11:14:50.548 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:14:53.537 [error.go:427]  ::1 - - [01/Jan/0001 12:00:00] "GET /user/GetUser HTTP/1.1 404 0" 0.000000  curl/7.54.0
+2019/01/11 11:14:53.537 [server.go:2741]  ::1 - - [11/Jan/2019 11:14:53] "GET /user/GetUser HTTP/1.1 404 0" 0.000300  curl/7.54.0
+2019/01/11 11:15:18.748 [error.go:427]  ::1 - - [01/Jan/0001 12:00:00] "GET /testtest HTTP/1.1 403 0" 0.000000  curl/7.54.0
+2019/01/11 11:15:28.904 [error.go:427]  ::1 - - [01/Jan/0001 12:00:00] "GET /user/getUser HTTP/1.1 404 0" 0.000000  curl/7.54.0
+2019/01/11 11:15:28.904 [server.go:2741]  ::1 - - [11/Jan/2019 11:15:28] "GET /user/getUser HTTP/1.1 404 0" 0.000159  curl/7.54.0
+2019/01/11 11:15:32.294 [error.go:427]  ::1 - - [01/Jan/0001 12:00:00] "GET /user/getyser HTTP/1.1 404 0" 0.000000  curl/7.54.0
+2019/01/11 11:15:32.294 [server.go:2741]  ::1 - - [11/Jan/2019 11:15:32] "GET /user/getyser HTTP/1.1 404 0" 0.000169  curl/7.54.0
+2019/01/11 11:15:35.133 [error.go:427]  ::1 - - [01/Jan/0001 12:00:00] "GET /user/getuser HTTP/1.1 403 0" 0.000000  curl/7.54.0
+2019/01/11 11:16:38.654 [I] [main.go:18]  app started, pid 94133 
+2019/01/11 11:16:38.667 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:16:42.153 [server.go:2741]  ::1 - - [11/Jan/2019 11:16:42] "GET /user/getuser HTTP/1.1 200 0" 0.000448  curl/7.54.0
+2019/01/11 11:16:43.513 [server.go:2741]  ::1 - - [11/Jan/2019 11:16:43] "GET /user/getuser HTTP/1.1 200 0" 0.000211  curl/7.54.0
+2019/01/11 11:18:36.664 [I] [main.go:18]  app started, pid 94699 
+2019/01/11 11:18:36.676 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:19:03.075 [I] [main.go:18]  app started, pid 94838 
+2019/01/11 11:19:03.089 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:19:30.765 [I] [main.go:18]  app started, pid 94993 
+2019/01/11 11:19:30.773 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:19:32.966 [server.go:2741]  ::1 - - [11/Jan/2019 11:19:32] "GET /user/getuser HTTP/1.1 200 0" 0.000654  curl/7.54.0
+2019/01/11 11:20:21.180 [I] [main.go:18]  app started, pid 95267 
+2019/01/11 11:20:21.190 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:20:25.419 [server.go:2741]  ::1 - - [11/Jan/2019 11:20:25] "GET /user/getuser HTTP/1.1 200 0" 0.000466  curl/7.54.0
+2019/01/11 11:22:53.095 [I] [main.go:18]  app started, pid 95959 
+2019/01/11 11:22:53.105 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:22:57.234 [server.go:2741]  ::1 - - [11/Jan/2019 11:22:57] "GET /user/getuser HTTP/1.1 200 0" 0.000591  curl/7.54.0
+2019/01/11 11:35:25.134 [I] [main.go:18]  app started, pid 99373 
+2019/01/11 11:35:25.144 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  Handler crashed with error can't find templatefile in the path:views/usercontroller/getuser.tpl
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/template.go:75
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/controller.go:283
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/controller.go:234
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/controller.go:214
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:864
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2019/01/11 11:35:36.904 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2019/01/11 11:35:36.905 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/11 11:36:06.042 [I] [main.go:18]  app started, pid 99576 
+2019/01/11 11:36:06.053 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:36:09.531 [server.go:2741]  ::1 - - [11/Jan/2019 11:36:09] "GET /user/getuser HTTP/1.1 500 0" 0.001305  curl/7.54.0
+2019/01/11 11:36:36.294 [server.go:2741]  ::1 - - [11/Jan/2019 11:36:36] "GET /user/getuser HTTP/1.1 500 0" 0.000234  curl/7.54.0
+2019/01/11 11:37:38.845 [I] [main.go:18]  app started, pid 106 
+2019/01/11 11:37:38.864 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:37:43.008 [server.go:2741]  ::1 - - [11/Jan/2019 11:37:43] "GET /user/getuser HTTP/1.1 500 0" 0.000334  curl/7.54.0
+2019/01/11 11:44:12.988 [I] [main.go:18]  app started, pid 2021 
+2019/01/11 11:44:12.997 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:44:21.075 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  Handler crashed with error interface conversion: *bizError.BizError is not reflect.Type: missing method Align
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/iface.go:85
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/iface.go:550
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/user.go:17
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/user.go:23
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:447
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:308
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:852
+2019/01/11 11:44:21.076 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2019/01/11 11:44:21.077 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2019/01/11 11:44:21.077 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2019/01/11 11:44:21.079 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/11 11:44:56.058 [I] [main.go:18]  app started, pid 2241 
+2019/01/11 11:44:56.069 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:44:58.886 [C] [asm_amd64.s:522]  the request url is  /user/getuser
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  Handler crashed with error interface conversion: bizError.BizError is not reflect.Type: missing method Align
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/iface.go:85
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/iface.go:550
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/user.go:17
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/user.go:23
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:522
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:447
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:308
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:852
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847
+2019/01/11 11:44:58.887 [C] [asm_amd64.s:522]  /usr/local/Cellar/go/1.11.1/libexec/src/runtime/asm_amd64.s:1333
+2019/01/11 11:44:58.888 [server.go:2977]  [HTTP] http: multiple response.WriteHeader calls
+2019/01/11 11:46:39.665 [I] [main.go:18]  app started, pid 2711 
+2019/01/11 11:46:39.675 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:46:42.138 [server.go:2741]  ::1 - - [11/Jan/2019 11:46:42] "GET /user/getuser HTTP/1.1 500 0" 0.000325  curl/7.54.0
+2019/01/11 11:53:07.079 [I] [main.go:18]  app started, pid 4475 
+2019/01/11 11:53:07.089 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:53:09.690 [server.go:2741]  ::1 - - [11/Jan/2019 11:53:09] "GET /user/getuser HTTP/1.1 500 0" 0.000319  curl/7.54.0
+2019/01/11 11:53:26.794 [I] [main.go:18]  app started, pid 4591 
+2019/01/11 11:53:26.802 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 11:53:34.133 [server.go:2741]  ::1 - - [11/Jan/2019 11:53:34] "GET /user/getuser HTTP/1.1 500 0" 0.000342  curl/7.54.0
+2019/01/11 14:03:40.318 [I] [main.go:16]  app started, pid 38033 
+2019/01/11 14:03:40.331 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:03:43.571 [server.go:2741]  ::1 - - [11/Jan/2019 02:03:43] "GET /user/getuser HTTP/1.1 500 0" 0.000355  curl/7.54.0
+2019/01/11 14:28:58.437 [I] [main.go:17]  app started, pid 44823 
+2019/01/11 14:28:58.448 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:40:18.091 [I] [main.go:17]  app started, pid 47923 
+2019/01/11 14:40:18.101 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:40:36.103 [server.go:2977]  [HTTP] http: panic serving [::1]:62017: interface conversion: interface {} is *controllers.BasicController, not controllers.BasicController
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc0000c5ea0)
+	/usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1746 +0x11e
+panic(0x173b820, 0xc0003250e0)
+	/usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513 +0x1e6
+do-global.com/bee-example/controllers.CustomPanicRecover(0xc000324f30)
+	/Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/panicRecover.go:15 +0xb15
+panic(0x172b5c0, 0xc0003250b0)
+	/usr/local/Cellar/go/1.11.1/libexec/src/runtime/panic.go:513 +0x1e6
+do-global.com/bee-example/controllers.(*UserController).GetUser(0xc000123b00)
+	/Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/controllers/user.go:13 +0x5e
+reflect.Value.call(0x17cee60, 0xc000123b00, 0x7a13, 0x17d2355, 0x4, 0x1cf5258, 0x0, 0x0, 0x0, 0x0, ...)
+	/usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:447 +0xbb4
+reflect.Value.Call(0x17cee60, 0xc000123b00, 0x7a13, 0x1cf5258, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/Cellar/go/1.11.1/libexec/src/reflect/value.go:308 +0xca
+do-global.com/bee-example/vendor/github.com/astaxie/beego.(*ControllerRegister).ServeHTTP(0xc0000e2630, 0x18c4320, 0xc00012a380, 0xc000123a00)
+	/Users/zhouxichao/code/test-code/go/src/do-global.com/bee-example/vendor/github.com/astaxie/beego/router.go:852 +0x2c66
+net/http.serverHandler.ServeHTTP(0xc000126ea0, 0x18c4320, 0xc00012a380, 0xc000123a00)
+	/usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2741 +0x1e9
+net/http.(*conn).serve(0xc0000c5ea0, 0x18c48e0, 0xc000163e00)
+	/usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:1847 +0x1146
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.11.1/libexec/src/net/http/server.go:2851 +0x7b0
+2019/01/11 14:41:05.152 [I] [main.go:17]  app started, pid 48181 
+2019/01/11 14:41:05.161 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:41:33.005 [I] [main.go:17]  app started, pid 48325 
+2019/01/11 14:41:33.014 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:45:26.668 [I] [main.go:17]  app started, pid 49382 
+2019/01/11 14:45:26.678 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:45:46.792 [I] [main.go:17]  app started, pid 49499 
+2019/01/11 14:45:46.800 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:46:47.112 [I] [main.go:17]  app started, pid 49786 
+2019/01/11 14:46:47.120 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:47:44.008 [I] [main.go:17]  app started, pid 50094 
+2019/01/11 14:47:44.017 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:49:13.303 [I] [main.go:17]  app started, pid 50525 
+2019/01/11 14:49:13.311 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:52:23.624 [I] [main.go:17]  app started, pid 51407 
+2019/01/11 14:52:23.635 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:52:26.398 [I] [panicRecover.go:55]  [BIZE] biz exception: code %v, message %v 601 123 
+2019/01/11 14:53:19.249 [I] [main.go:17]  app started, pid 51694 
+2019/01/11 14:53:19.263 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:53:31.934 [I] [main.go:17]  app started, pid 51767 
+2019/01/11 14:53:31.949 [I] [asm_amd64.s:1333]  http server Running on http://:8080
+2019/01/11 14:53:34.332 [E] [panicRecover.go:55]  [BIZE] biz exception: code 601  message  123 

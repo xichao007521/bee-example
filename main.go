@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "do-global.com/bee-example/error"
+	"do-global.com/bee-example/controllers"
 	"do-global.com/bee-example/logger"
 	_ "do-global.com/bee-example/logger"
 	_ "do-global.com/bee-example/routers"
@@ -14,11 +14,8 @@ func main() {
 	appLoggerConf := logger.AppConfig
 	content, _ := json.Marshal(appLoggerConf)
 	beego.SetLogger("file", string(content))
-	go func() {
-		beego.Run()
-	}()
-
 	beego.Info("app started, pid", os.Getpid())
+	beego.BConfig.RecoverFunc = controllers.CustomPanicRecover
 	prepare()
 	defer shutdownGraceful()
 	beego.Run()

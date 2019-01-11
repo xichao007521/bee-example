@@ -3,7 +3,6 @@ package controllers
 import (
 	"context"
 	"do-global.com/bee-example/services"
-	"do-global.com/public-server/models"
 	"github.com/astaxie/beego"
 	"strings"
 	"time"
@@ -14,9 +13,6 @@ type BasicController struct {
 
 	// 请求开始时间
 	startTime int64
-
-	// 产品线
-	productApp *models.ProductApp
 
 	// 上下文
 	reqCtx context.Context

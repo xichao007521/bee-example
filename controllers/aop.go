@@ -18,6 +18,7 @@ import (
 func (t *BasicController) Prepare() {
 	t.startTime = time.Now().UnixNano()
 
+	t.Ctx.Input.SetData("_____t", t)
 	// 设置request生命周期的参数
 	ctx := context.TODO()
 	ctx = globals.WithRequestID(ctx, rand.Intn(time.Now().Second() + 1))
@@ -36,11 +37,15 @@ func (t *BasicController) Finish()  {
 	paramsStr, _ := json.Marshal(t.Ctx.Request.Form)
 	reqPath := t.Ctx.Request.URL.Path
 	now := time.Now()
-	if t.Ctx.ResponseWriter.Status == 0 {
-		t.Ctx.ResponseWriter.Status = http.StatusOK
+	status := t.Ctx.Input.GetData("___status")
+	if status == nil || status.(int) == 0 {
+		status = t.Ctx.ResponseWriter.Status
+	}
+	if status == 0 {
+		status = http.StatusOK
 	}
 	accessInfo := fmt.Sprintf("%v\001%v\001%v\001%v\001%v\001%v", now.Format("20060102"), now.UnixNano() / 1e6, reqPath, string(paramsStr),
-		t.Ctx.ResponseWriter.Status, spentTime)
+		status, spentTime)
 	logger.AccessLogger.Info(accessInfo)
 }
 

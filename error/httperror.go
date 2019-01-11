@@ -1,4 +1,4 @@
-package error
+package myError
 
 import (
 	"fmt"

@@ -1,19 +1,20 @@
-package error
+package myError
 
 import "fmt"
 
 type BizError struct {
-	code int
-	message string
+	error
+	Code int
+	Message string
 }
 
 func (p *BizError) Error() string {
-	return fmt.Sprintf("BizError code: %v, message %s", p.code, p.message)
+	return fmt.Sprintf("BizError code: %v, message %s", p.Code, p.Message)
 }
 
-func newBizError(code int, message string) *BizError {
+func NewBizError(code int, message string) *BizError {
 	return &BizError{
-		code: code,
-		message: message,
+		Code: code,
+		Message: message,
 	}
 }
