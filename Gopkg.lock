@@ -29,6 +29,22 @@
   version = "v1.11.1"
 
 [[projects]]
+  digest = "1:ad53d1f710522a38d1f0e5e0a55a194b1c6b2cd8e84313568e43523271f0cf62"
+  name = "github.com/go-redis/redis"
+  packages = [
+    ".",
+    "internal",
+    "internal/consistenthash",
+    "internal/hashtag",
+    "internal/pool",
+    "internal/proto",
+    "internal/util",
+  ]
+  pruneopts = "UT"
+  revision = "22be8a3eaf992c828cecb69dc07348313bf08d2e"
+  version = "v6.15.1"
+
+[[projects]]
   digest = "1:ec6f9bf5e274c833c911923c9193867f3f18788c461f76f05f62bb1510e0ae65"
   name = "github.com/go-sql-driver/mysql"
   packages = ["."]
@@ -109,8 +125,10 @@
   input-imports = [
     "github.com/BurntSushi/toml",
     "github.com/astaxie/beego",
+    "github.com/astaxie/beego/context",
     "github.com/astaxie/beego/logs",
     "github.com/astaxie/beego/orm",
+    "github.com/go-redis/redis",
     "github.com/go-sql-driver/mysql",
     "github.com/smartystreets/goconvey/convey",
   ]
