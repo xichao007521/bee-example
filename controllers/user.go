@@ -1,5 +1,7 @@
 package controllers
 
+import "fmt"
+
 type UserController struct {
 	BasicController
 }
@@ -7,7 +9,8 @@ type UserController struct {
 func (the *UserController) GetUser() {
 	//panic(myError.NewBizError(601, "123"))
 	//fmt.Println(33333)
-	v := the.GetStringNE("uid")
+	v, err := userService.GetUser(&the.reqCtx, "1")
+	fmt.Println(err)
 	the.ok(v)
 	//var tp http.RoundTripper = &http.Transport{
 	//	DialContext: (&net.Dialer{

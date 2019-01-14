@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "do-global.com/bee-example/cache"
 	"do-global.com/bee-example/controllers"
 	"do-global.com/bee-example/logger"
 	_ "do-global.com/bee-example/logger"
