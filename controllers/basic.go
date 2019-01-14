@@ -96,7 +96,7 @@ func (t *BasicController) GetStringsNE(key string) []string {
 func (t *BasicController) GetInt(key string) int {
 	v, err := strconv.Atoi(t.GetStringNE(key))
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a int value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a int value"))
 	}
 	return v
 }
@@ -104,7 +104,7 @@ func (t *BasicController) GetInt(key string) int {
 func (t *BasicController) GetInt8(key string) int8 {
 	i64, err := strconv.ParseInt(t.GetStringNE(key), 10, 8)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a int8 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a int8 value"))
 	}
 	return int8(i64)
 }
@@ -112,7 +112,7 @@ func (t *BasicController) GetInt8(key string) int8 {
 func (t *BasicController) GetUint8(key string) uint8 {
 	u64, err := strconv.ParseUint(t.GetStringNE(key), 10, 8)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a uint8 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a uint8 value"))
 	}
 	return uint8(u64)
 }
@@ -120,7 +120,7 @@ func (t *BasicController) GetUint8(key string) uint8 {
 func (t *BasicController) GetInt16(key string) int16 {
 	i64, err := strconv.ParseInt(t.GetStringNE(key), 10, 16)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a int16 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a int16 value"))
 	}
 	return int16(i64)
 }
@@ -128,7 +128,7 @@ func (t *BasicController) GetInt16(key string) int16 {
 func (t *BasicController) GetUint16(key string) uint16 {
 	u64, err := strconv.ParseUint(t.GetStringNE(key), 10, 16)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a uint16 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a uint16 value"))
 	}
 	return uint16(u64)
 }
@@ -136,7 +136,7 @@ func (t *BasicController) GetUint16(key string) uint16 {
 func (t *BasicController) GetInt32(key string) int32 {
 	i64, err := strconv.ParseInt(t.GetStringNE(key), 10, 32)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a int32 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a int32 value"))
 	}
 	return int32(i64)
 }
@@ -144,7 +144,7 @@ func (t *BasicController) GetInt32(key string) int32 {
 func (t *BasicController) GetUint32(key string) uint32 {
 	u64, err := strconv.ParseUint(t.GetStringNE(key), 10, 32)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a uint32 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a uint32 value"))
 	}
 	return uint32(u64)
 }
@@ -152,7 +152,7 @@ func (t *BasicController) GetUint32(key string) uint32 {
 func (t *BasicController) GetInt64(key string) int64 {
 	i64, err := strconv.ParseInt(t.GetStringNE(key), 10, 64)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a int64 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a int64 value"))
 	}
 	return int64(i64)
 }
@@ -160,7 +160,7 @@ func (t *BasicController) GetInt64(key string) int64 {
 func (t *BasicController) GetUint64(key string) uint64 {
 	u64, err := strconv.ParseUint(t.GetStringNE(key), 10, 64)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a uint64 value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a uint64 value"))
 	}
 	return uint64(u64)
 }
@@ -168,7 +168,7 @@ func (t *BasicController) GetUint64(key string) uint64 {
 func (t *BasicController) GetBool(key string) bool {
 	v, err := strconv.ParseBool(t.GetStringNE(key))
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a bool value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a bool value"))
 	}
 	return v
 }
@@ -176,7 +176,7 @@ func (t *BasicController) GetBool(key string) bool {
 func (t *BasicController) GetFloat(key string) float64 {
 	v, err := strconv.ParseFloat(t.GetStringNE(key), 64)
 	if err != nil {
-		panic(myError.NewBizError(400, "param:"+t.GetStringNE(key)+" is not a float value"))
+		panic(myError.NewBizError(400, "param:"+t.GetString(key)+" is not a float value"))
 	}
 	return v
 }
