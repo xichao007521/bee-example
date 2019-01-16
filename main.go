@@ -1,17 +1,21 @@
 package main
 
 import (
-	_ "do-global.com/bee-example/cache"
 	"do-global.com/bee-example/controllers"
-	"do-global.com/bee-example/logger"
 	_ "do-global.com/bee-example/logger"
+	_ "do-global.com/bee-example/rediscache"
 	_ "do-global.com/bee-example/routers"
+	"do-global.com/public-server/logger"
 	"encoding/json"
 	"github.com/astaxie/beego"
 	"os"
 )
 
 func main() {
+	Run()
+}
+
+func Run()  {
 	appLoggerConf := logger.AppConfig
 	content, _ := json.Marshal(appLoggerConf)
 	beego.SetLogger("file", string(content))

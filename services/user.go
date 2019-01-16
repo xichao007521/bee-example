@@ -2,7 +2,7 @@ package services
 
 import (
 	"context"
-	"do-global.com/bee-example/cache"
+	"do-global.com/bee-example/rediscache"
 	"do-global.com/bee-example/models"
 	"encoding/json"
 	"github.com/astaxie/beego"
@@ -38,7 +38,7 @@ func (*UserService) GetUser(reqCtx *context.Context, uid string) (*models.User, 
 }
 
 func GetFromCache(ctx *context.Context, rt reflect.Type, key string, fallback func(*context.Context) (interface{}, error)) (interface{}, error) {
-	cacheV, err := cache.RedisClient.Get(key).Result()
+	cacheV, err := rediscache.RedisClient.Get(key).Result()
 	if cacheV != "" {
 		rtv := reflect.New(rt)
 		rv := rtv.Interface()
@@ -57,7 +57,7 @@ func GetFromCache(ctx *context.Context, rt reflect.Type, key string, fallback fu
 			return nil, err
 		}
 		cacheV = string(jsonB)
-		cache.RedisClient.Set(key, cacheV, 24 * 30 * time.Hour)
+		rediscache.RedisClient.Set(key, cacheV, 24 * 30 * time.Hour)
 	}
 	return result, nil
 }
