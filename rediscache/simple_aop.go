@@ -22,7 +22,7 @@ func SimpleAop(ctx *context.Context, options *SimpleOptions, fallback func(*cont
 		err := json.Unmarshal([]byte(cacheV), rv)
 		return reflect.ValueOf(rv).Elem().Interface(), true, err
 	}
-	beego.Warn("[REDIS] cant get value from redis cache, maybe load from db!")
+	beego.Warn("[REDIS][SIMPLE] cant get value from redis cache, maybe load from db!")
 	var result interface{} = nil
 	result, err = fallback(ctx)
 	if err != nil {
@@ -31,20 +31,11 @@ func SimpleAop(ctx *context.Context, options *SimpleOptions, fallback func(*cont
 	// 是否回填cache成功
 	rewriteSuccess := false
 	if result != nil {
-		jsonB, err := json.Marshal(result)
+		cacheV, isEmpty, err := GetCacheValueItem(result)
 		if err != nil {
 			return nil, false, err
 		}
-		cacheV = string(jsonB)
-		cLength := 0
-		switch result.(type) {
-		// string 类型单独处理
-		case string:
-			cLength = len(result.(string))
-		default:
-			cLength = len(cacheV)
-		}
-		if cLength > 0 {
+		if !isEmpty {
 			RedisClient.Set(options.Key, cacheV, options.Expires)
 			rewriteSuccess = true
 		}
@@ -52,7 +43,7 @@ func SimpleAop(ctx *context.Context, options *SimpleOptions, fallback func(*cont
 	// 是否需要存储空值
 	if !rewriteSuccess && options.EmptyExpires > 0 {
 		RedisClient.Set(options.Key, EmptyFlag, options.EmptyExpires)
-		beego.Warn("[REDIS] cache empty value, key ", options.Key)
+		beego.Warn("[REDIS][SIMPLE] cache empty value, key:", options.Key)
 	}
 	return result, false, nil
 }

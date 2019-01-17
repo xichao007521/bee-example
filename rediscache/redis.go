@@ -1,8 +1,10 @@
 package rediscache
 
 import (
+	"encoding/json"
 	"github.com/astaxie/beego"
 	"github.com/go-redis/redis"
+	"os"
 	"reflect"
 	"strings"
 	"sync"
@@ -52,4 +54,27 @@ type Options struct {
 	EmptyExpires time.Duration
 }
 
+// 返回的三个参数，依次是: cache值，是否空，错误信息
+func GetCacheValueItem(v interface{}) (string, bool, error) {
+	jsonB, err := json.Marshal(v)
+	if err != nil {
+		return "", true, err
+	}
+	cacheV := string(jsonB)
+	cLength := 0
+	switch v.(type) {
+	// string 类型单独处理
+	case string:
+	cLength = len(v.(string))
+	default:
+	cLength = len(cacheV)
+	}
+	return cacheV, cLength == 0, nil
+}
 
+
+func testSetup() {
+	ap, _ := os.Getwd()
+	beego.TestBeegoInit(ap + "/..")
+	BuildRedisClient()
+}

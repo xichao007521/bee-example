@@ -6,6 +6,7 @@ import (
 	"math/rand"
 	"os"
 	"reflect"
+	"strconv"
 	"testing"
 	"time"
 )
@@ -21,14 +22,14 @@ func TestSimpleAop(t *testing.T) {
 	setup()
 	ctx := context.TODO()
 
-	cacheKey := "testtest" + string(rand.Intn(100000000))
+	cacheKey := "testtest" + strconv.Itoa(rand.Intn(100000000))
 
 	RedisClient.Del(cacheKey)
 
 	options := &SimpleOptions{}
 	options.Key = cacheKey
 	options.Rt = reflect.TypeOf("")
-	options.Expires = 10 * time.Second
+	options.Expires = 30 * time.Second
 
 	// 第一次保证cache里面取不到值
 	val, fromCache, err := SimpleAop(&ctx, options, func(i *context.Context) (interface{}, error) {
