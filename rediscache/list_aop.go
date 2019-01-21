@@ -47,13 +47,16 @@ func ListAop(ctx *context.Context, options *ListOptions, fallback func(*context.
 		for _, item := range result {
 			cacheV, isEmpty, err := GetCacheValueItem(item)
 			if err != nil {
-				return nil, false, err
+				beego.Warn("[REDIS][LIST] GetCacheValueItem error!", err)
+				continue
 			}
 			if !isEmpty {
 				RedisClient.RPush(options.Key, cacheV)
-				RedisClient.Expire(options.Key, options.Expires)
 				rewriteCount++
 			}
+		}
+		if rewriteCount > 0 {
+			RedisClient.Expire(options.Key, options.EmptyExpires)
 		}
 	}
 

@@ -15,8 +15,6 @@ func TestSetAop(t *testing.T) {
 
 	cacheKey := "testtest_set_" + strconv.Itoa(rand.Intn(100000000))
 
-	RedisClient.Del(cacheKey)
-
 	options := &SetOptions{}
 	options.Key = cacheKey
 	options.Rt = reflect.TypeOf("")

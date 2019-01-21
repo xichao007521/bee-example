@@ -45,13 +45,16 @@ func SetAop(ctx *context.Context, options *SetOptions, fallback func(*context.Co
 		for _, item := range result {
 			cacheV, isEmpty, err := GetCacheValueItem(item)
 			if err != nil {
-				return nil, false, err
+				beego.Warn("[REDIS][SET] GetCacheValueItem error!", err)
+				continue
 			}
 			if !isEmpty {
 				RedisClient.SAdd(options.Key, cacheV)
-				RedisClient.Expire(options.Key, options.Expires)
 				rewriteCount++
 			}
+		}
+		if rewriteCount > 0 {
+			RedisClient.Expire(options.Key, options.EmptyExpires)
 		}
 	}
 

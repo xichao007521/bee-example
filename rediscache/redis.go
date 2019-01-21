@@ -11,6 +11,7 @@ import (
 	"time"
 )
 
+// NOTICE!!!
 var RedisClient *redis.ClusterClient
 
 func init() {
@@ -48,7 +49,7 @@ const (
 type Options struct {
 	// 非空
 	Key          string
-	// 非空
+	// 非空, 如果是集合类型，表示集合里面元素的类型
 	Rt           reflect.Type
 	Expires      time.Duration
 	EmptyExpires time.Duration
