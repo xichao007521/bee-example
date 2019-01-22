@@ -54,7 +54,7 @@ func SetAop(ctx *context.Context, options *SetOptions, fallback func(*context.Co
 			}
 		}
 		if rewriteCount > 0 {
-			RedisClient.Expire(options.Key, options.EmptyExpires)
+			RedisClient.Expire(options.Key, options.Expires)
 		}
 	}
 

@@ -64,6 +64,13 @@ func ZSetAop(ctx *context.Context, options *ZSetOptions, fallback func(*context.
 	var result []interface{}
 	var mapResult = make(map[interface{}]float64)
 	if len(cacheVs) > 0 {
+		if len(cacheVs) == 1 && cacheVs[0].Member == EmptyFlag {
+			if options.IsMap {
+				return mapResult, true, nil
+			} else {
+				return result, true, nil
+			}
+		}
 		for _, cacheV := range cacheVs {
 			rtv := reflect.New(options.Rt)
 			rv := rtv.Interface()
@@ -72,6 +79,7 @@ func ZSetAop(ctx *context.Context, options *ZSetOptions, fallback func(*context.
 				return nil, false, err
 			}
 			vv := reflect.ValueOf(rv).Elem().Interface()
+
 			if options.IsMap {
 				mapResult[vv] = cacheV.Score
 			} else {
@@ -90,6 +98,9 @@ func ZSetAop(ctx *context.Context, options *ZSetOptions, fallback func(*context.
 	fResult, err := fallback(ctx)
 	if err != nil {
 		return nil, false, err
+	}
+	if fResult == nil {
+		return nil, false, nil
 	}
 	rewriteCount := 0
 	if options.IsMap {
@@ -133,7 +144,15 @@ func ZSetAop(ctx *context.Context, options *ZSetOptions, fallback func(*context.
 	}
 	if rewriteCount > 0 {
 		RedisClient.Expire(options.Key, options.Expires)
+	} else {
+		// 空值回填
+		if rewriteCount == 0 && options.EmptyExpires > 0 {
+			RedisClient.ZAdd(options.Key, redis.Z{Member: EmptyFlag})
+			RedisClient.Expire(options.Key, options.EmptyExpires)
+			beego.Warn("[REDIS][ZSET] cache empty value, key:", options.Key)
+		}
 	}
+
 	return fResult, false, nil
 }
 
