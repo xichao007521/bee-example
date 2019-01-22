@@ -50,9 +50,9 @@ func init() {
 // 自定义日志
 // 方便debug日志
 var ForDebugLogger *logs.BeeLogger
+
 // 自定义access日志
 var AccessLogger *logs.BeeLogger
-
 
 func buildCustomLogger(loggerName string) *logs.BeeLogger {
 	loggerFileConfig := loggerConfig.FileLoggers[loggerName]
@@ -62,7 +62,6 @@ func buildCustomLogger(loggerName string) *logs.BeeLogger {
 	result.SetLogger(logs.AdapterConsole)
 	return result
 }
-
 
 // read config
 func readConfig() {

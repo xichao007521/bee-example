@@ -22,7 +22,7 @@ func (*UserService) Login(username string, password string) *models.User {
 	}
 }
 
-func (*UserService) GetUser(reqCtx *context.Context, uid string) (*models.User, error)  {
+func (*UserService) GetUser(reqCtx *context.Context, uid string) (*models.User, error) {
 	rt := reflect.TypeOf(models.User{})
 	rv, err := GetFromCache(reqCtx, rt, uid, func(i *context.Context) (interface{}, error) {
 		// get from db
@@ -57,7 +57,7 @@ func GetFromCache(ctx *context.Context, rt reflect.Type, key string, fallback fu
 			return nil, err
 		}
 		cacheV = string(jsonB)
-		cache.RedisClient.Set(key, cacheV, 24 * 30 * time.Hour)
+		cache.RedisClient.Set(key, cacheV, 24*30*time.Hour)
 	}
 	return result, nil
 }

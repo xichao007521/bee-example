@@ -12,7 +12,7 @@ func init() {
 	conn := beego.AppConfig.String("redis.conn")
 
 	RedisClient = redis.NewClusterClient(&redis.ClusterOptions{
-		Addrs: strings.Split(conn, ","),
+		Addrs:    strings.Split(conn, ","),
 		Password: "",
 	})
 
