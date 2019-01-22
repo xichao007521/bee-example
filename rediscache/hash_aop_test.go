@@ -1,7 +1,6 @@
 package rediscache
 
 import (
-	"context"
 	"do-global.com/bee-example/models"
 	"math/rand"
 	"reflect"
@@ -12,8 +11,6 @@ import (
 
 func TestHashAop(t *testing.T) {
 	testSetup()
-
-	ctx := context.TODO()
 
 	cacheKey := "testtest_hash_" + strconv.Itoa(rand.Intn(100000000))
 
@@ -27,7 +24,7 @@ func TestHashAop(t *testing.T) {
 	options.FieldAttr = "Id"
 
 	// 第一次, cache里没有值，从fallback取到并回填
-	val, fromCache, err := HashAop(&ctx, options, func(i *context.Context) ([]interface{}, error) {
+	val, fromCache, err := HashAop(options, func() ([]interface{}, error) {
 		var r []interface{}
 		r = append(r, models.User{Id: 1, Name: "name1"})
 		r = append(r, models.User{Id: 2, Name: "name2"})
@@ -45,7 +42,7 @@ func TestHashAop(t *testing.T) {
 	}
 
 	// 第二次, cache有值，直接从cache里取值
-	val, fromCache, err = HashAop(&ctx, options, func(i *context.Context) ([]interface{}, error) {
+	val, fromCache, err = HashAop(options, func() ([]interface{}, error) {
 		var r []interface{}
 		r = append(r, models.User{Id: 1, Name: "name1"})
 		r = append(r, models.User{Id: 2, Name: "name2"})

@@ -1,8 +1,8 @@
 package rediscache
 
 import (
-	"context"
 	"encoding/json"
+	"errors"
 	"github.com/astaxie/beego"
 	"reflect"
 )
@@ -14,7 +14,10 @@ type ListOptions struct {
 	Stop  int64
 }
 
-func ListAop(ctx *context.Context, options *ListOptions, fallback func(*context.Context) ([]interface{}, error)) ([]interface{}, bool, error) {
+func ListAop(options *ListOptions, fallback func() ([]interface{}, error)) ([]interface{}, bool, error) {
+	if options.Key == "" {
+		return nil, false, errors.New("Key must not be empty!")
+	}
 	cacheVs, err := RedisClient.LRange(options.Key, options.Start, options.Stop).Result()
 	var result []interface{}
 	// 从cache里取到值
@@ -37,7 +40,7 @@ func ListAop(ctx *context.Context, options *ListOptions, fallback func(*context.
 		return result, true, err
 	}
 	beego.Warn("[REDIS][LIST] cant get value from redis cache, maybe load from db!")
-	result, err = fallback(ctx)
+	result, err = fallback()
 	if err != nil {
 		return nil, false, err
 	}

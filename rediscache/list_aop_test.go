@@ -29,7 +29,7 @@ func TestListAop(t *testing.T) {
 	RedisClient.Del(cacheKey)
 
 	// 第一次保证不从cache里面取值
-	val, fromCache, err := ListAop(&ctx, options, func(i *context.Context) ([]interface{}, error) {
+	val, fromCache, err := ListAop(options, func() ([]interface{}, error) {
 		var result []interface{}
 		result = append(result, models.User{Id: 1}, models.User{Id: 2})
 		return result, nil
@@ -49,7 +49,7 @@ func TestListAop(t *testing.T) {
 	}
 
 	// 第二次保证从cache里面取值
-	val, fromCache, err = ListAop(&ctx, options, func(i *context.Context) ([]interface{}, error) {
+	val, fromCache, err = ListAop(options, func() ([]interface{}, error) {
 		var result []interface{}
 		result = append(result, models.User{Id: 1}, models.User{Id: 2})
 		return result, nil
@@ -71,7 +71,7 @@ func TestListAop(t *testing.T) {
 	// 第三次保证保证存进去EmptyFlag
 	RedisClient.Del(cacheKey)
 	options.EmptyExpires = 30 * time.Second
-	val, fromCache, err = ListAop(&ctx, options, func(i *context.Context) ([]interface{}, error) {
+	val, fromCache, err = ListAop(options, func() ([]interface{}, error) {
 		return nil, nil
 	})
 
@@ -84,7 +84,7 @@ func TestListAop(t *testing.T) {
 	}
 
 	// 第四保证取空值，并且从cache里取
-	val, fromCache, err = ListAop(&ctx, options, func(i *context.Context) ([]interface{}, error) {
+	val, fromCache, err = ListAop(options, func() ([]interface{}, error) {
 		return nil, nil
 	})
 

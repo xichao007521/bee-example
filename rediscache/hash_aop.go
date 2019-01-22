@@ -1,7 +1,6 @@
 package rediscache
 
 import (
-	"context"
 	"do-global.com/bee-example/globals"
 	"encoding/json"
 	"github.com/astaxie/beego"
@@ -18,7 +17,10 @@ type HashOptions struct {
 	FieldAttr string
 }
 
-func HashAop(ctx *context.Context, options *HashOptions, fallback func(*context.Context) ([]interface{}, error)) ([]interface{}, bool, error) {
+func HashAop(options *HashOptions, fallback func() ([]interface{}, error)) ([]interface{}, bool, error) {
+	if options.Key == "" {
+		return nil, false, errors.New("Key must not be empty!")
+	}
 	if len(options.Fields) == 0 {
 		return nil, false, errors.New("Fields must not be empty!")
 	}
@@ -48,7 +50,7 @@ func HashAop(ctx *context.Context, options *HashOptions, fallback func(*context.
 		}
 	}
 
-	result, err = fallback(ctx)
+	result, err = fallback()
 	if err != nil {
 		return nil, false, err
 	}
