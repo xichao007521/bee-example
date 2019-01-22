@@ -21,13 +21,13 @@ func (t *BasicController) Prepare() {
 	t.Ctx.Input.SetData("_____t", t)
 	// 设置request生命周期的参数
 	ctx := context.TODO()
-	ctx = globals.WithRequestID(ctx, rand.Intn(time.Now().Second() + 1))
+	ctx = globals.WithRequestID(ctx, rand.Intn(time.Now().Second()+1))
 	t.reqCtx = ctx
 	// 访问权限检测
 	checkAccess(t)
 }
 
-func (t *BasicController) Finish()  {
+func (t *BasicController) Finish() {
 	// 删掉reqId相关资源
 	globals.RemoveOrmer(t.reqCtx)
 	t.reqCtx.Done()
@@ -44,15 +44,14 @@ func (t *BasicController) Finish()  {
 	if status == 0 {
 		status = http.StatusOK
 	}
-	accessInfo := fmt.Sprintf("%v\001%v\001%v\001%v\001%v\001%v", now.Format("20060102"), now.UnixNano() / 1e6, reqPath, string(paramsStr),
+	accessInfo := fmt.Sprintf("%v\001%v\001%v\001%v\001%v\001%v", now.Format("20060102"), now.UnixNano()/1e6, reqPath, string(paramsStr),
 		status, spentTime)
 	logger.AccessLogger.Info(accessInfo)
 }
 
-
 /***** 权限校验 *****/
 // 白名单
-var accessWhiteList = []string {
+var accessWhiteList = []string{
 	"controllers.HealthController.Check",
 }
 
@@ -107,4 +106,3 @@ func checkAccess(t *BasicController) {
 	// TODO 判断用户
 
 }
-
