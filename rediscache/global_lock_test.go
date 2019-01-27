@@ -13,8 +13,8 @@ func TestGlobalLock(t *testing.T) {
 	cacheKey := "testtest_global_lock_" + strconv.Itoa(rand.Intn(100000000))
 
 	options := &GlobalLockOptions{
-		Key: cacheKey,
-		Expire: 5 * time.Second,
+		Key:     cacheKey,
+		Expire:  5 * time.Second,
 		Timeout: 10 * time.Second,
 	}
 
@@ -42,7 +42,7 @@ func TestGlobalLock(t *testing.T) {
 		if !success || err != nil {
 			t.Fatal("2. acquire global lock FAIL")
 		}
-		if time.Now().Sub(startTime) < 2 * time.Second {
+		if time.Now().Sub(startTime) < 2*time.Second {
 			t.Fatal("2.1. should not be happened, last operation hold lock 3s!")
 		}
 	}()

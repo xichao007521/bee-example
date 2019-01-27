@@ -75,4 +75,3 @@ func TestSimpleAop(t *testing.T) {
 	}
 
 }
-

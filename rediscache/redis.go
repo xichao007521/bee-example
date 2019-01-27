@@ -19,7 +19,8 @@ func init() {
 }
 
 var mu sync.Mutex
-func BuildRedisClient()  {
+
+func BuildRedisClient() {
 	mu.Lock()
 	defer mu.Unlock()
 	if RedisClient != nil {
@@ -28,7 +29,7 @@ func BuildRedisClient()  {
 	conn := beego.AppConfig.String("redis.conn")
 
 	RedisClient = redis.NewClusterClient(&redis.ClusterOptions{
-		Addrs: strings.Split(conn, ","),
+		Addrs:    strings.Split(conn, ","),
 		Password: "",
 	})
 
@@ -48,7 +49,7 @@ const (
 
 type Options struct {
 	// 非空
-	Key          string
+	Key string
 	// 非空, 如果是集合类型，表示集合里面元素的类型
 	Rt           reflect.Type
 	Expires      time.Duration
@@ -66,13 +67,12 @@ func GetCacheValueItem(v interface{}) (string, bool, error) {
 	switch v.(type) {
 	// string 类型单独处理
 	case string:
-	cLength = len(v.(string))
+		cLength = len(v.(string))
 	default:
-	cLength = len(cacheV)
+		cLength = len(cacheV)
 	}
 	return cacheV, cLength == 0, nil
 }
-
 
 func testSetup() {
 	ap, _ := os.Getwd()

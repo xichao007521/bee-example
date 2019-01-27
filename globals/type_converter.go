@@ -37,7 +37,7 @@ func Number2Float64(v interface{}, kind reflect.Kind) (float64, bool) {
 
 /**
 基础类型转string
- */
+*/
 func Primary2String(v interface{}, kind reflect.Kind) (string, bool) {
 	switch kind {
 	case reflect.Int:

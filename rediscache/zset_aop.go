@@ -17,10 +17,10 @@ type ZSetOptions struct {
 	// 如果为true，表示返回map，
 	// key是member，value是score
 	// NOTICE!!! 并且返回结果的map的value一定是float64类型
-	IsMap      bool
+	IsMap bool
 
-	Desc       bool
-	ByScore    bool
+	Desc    bool
+	ByScore bool
 
 	// 如果是struct类型，需要指定一下，使用哪个字段作为score，否则score默认是0
 	ScoreField string
@@ -155,4 +155,3 @@ func ZSetAop(ctx *context.Context, options *ZSetOptions, fallback func(*context.
 
 	return fResult, false, nil
 }
-

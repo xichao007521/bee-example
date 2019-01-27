@@ -81,7 +81,7 @@ func HashAop(options *HashOptions, fallback func() ([]interface{}, error)) ([]in
 			if fieldV == "" {
 				beego.Warn("[REDIS][HASH] key ", options.Key, " value ", item, " has not valid fieldValue!!!")
 			}
-			if !isEmpty && fieldV != ""{
+			if !isEmpty && fieldV != "" {
 				RedisClient.HSet(options.Key, fieldV, cacheV)
 				rewriteCount++
 			}

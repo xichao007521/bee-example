@@ -56,12 +56,12 @@ func TestZSetAop(t *testing.T) {
 	options.ScoreField = "Id"
 	options.Rt = reflect.TypeOf(models.User{})
 	val, fromCache, err = ZSetAop(&ctx, options, func(i *context.Context) (interface{}, error) {
-		var r [] interface{}
+		var r []interface{}
 		r = append(r, models.User{Id: 1, Name: "name1"})
 		r = append(r, models.User{Id: 2, Name: "name2"})
 		return r, nil
 	})
-	valarr := val.([] interface{})
+	valarr := val.([]interface{})
 	u1 := valarr[0].(models.User)
 	u2 := valarr[1].(models.User)
 	if err != nil || fromCache || len(valarr) != 2 || u1.Name != "name1" || u1.Id != 1 || u2.Name != "name2" || u2.Id != 2 {
@@ -70,17 +70,15 @@ func TestZSetAop(t *testing.T) {
 
 	// 第四次, 非map 类型 cache里有值
 	val, fromCache, err = ZSetAop(&ctx, options, func(i *context.Context) (interface{}, error) {
-		var r [] interface{}
+		var r []interface{}
 		r = append(r, models.User{Id: 1, Name: "name1"})
 		r = append(r, models.User{Id: 2, Name: "name2"})
 		return r, nil
 	})
-	valarr = val.([] interface{})
+	valarr = val.([]interface{})
 	u1 = valarr[0].(models.User)
 	u2 = valarr[1].(models.User)
 	if err != nil || !fromCache || len(valarr) != 2 || u1.Name != "name1" || u1.Id != 1 || u2.Name != "name2" || u2.Id != 2 {
 		t.Fatal("4. must not be from cache FAIL")
 	}
 }
-
-

@@ -8,7 +8,7 @@ import (
 )
 
 type GlobalLockOptions struct {
-	Key           string
+	Key     string
 	Timeout time.Duration
 	Expire  time.Duration
 }
@@ -26,7 +26,7 @@ func GlobalLock(options *GlobalLockOptions, fallback func()) (bool, error) {
 		options.Expire = 30 * time.Second
 	}
 	startTime := time.Now()
-	for ; ;  {
+	for {
 		success, err := RedisClient.SetNX(options.Key, "1", options.Expire).Result()
 		if err == nil && success {
 			beego.Debug("add lock success: ", options.Key)
